@@ -1,0 +1,173 @@
+@keyframes tchouki_run {
+    from {
+        left: -400px;
+    }
+
+    to {
+        left: 6000px;
+    }
+}
+
+@keyframes wallpaper_rock {
+    from {
+        top: 0
+    }
+
+    to {
+        top: -30px
+    }
+}
+
+body {
+    background: url(images/wallpaper.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.audio-control {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+}
+.tchouki_logo {
+    transition: all 0.5s;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.575);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 5px solid white;
+}
+
+.tchouki_logo_charged {
+    height: 120px;
+    width: 120px;
+}
+
+.tchouki_logo>img {
+    height: 80%;
+}
+
+.wallpaper_rock {
+    position: absolute;
+    animation-name: wallpaper_rock;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.tchouki_run {
+    position: absolute;
+    animation-name: tchouki_run;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    bottom: -15px;
+    height: 250px;
+    animation-timing-function: linear;
+}
+
+.buttons {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    padding: 0px !important;
+    margin-bottom: 5px;
+    width: 100% !important;
+    background-color: #ffffffef !important;
+    text-decoration: none;
+}
+
+.btn:hover {
+    padding: 0px !important;
+}
+
+.btn-charged {
+    margin-bottom: 20px !important;
+}
+
+.icon_btn {
+    transition: all 0.2s ease-out;
+    height: 70%;
+    z-index: 99;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 50px;
+}
+
+.btn:hover>.icon_btn {
+    transition: all 0.2s;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.btn-order {
+    color: #74c763;
+}
+
+.btn-order:before, .btn-order:after {
+    background-color: #74c763;
+}
+
+.btn-discord {
+    color: #5165f6;
+}
+
+.btn-discord:before, .btn-discord:after {
+    background-color: #5165f6;
+}
+
+.btn-instagram {
+    color: #cf2c8d;
+}
+
+.btn-instagram:before, .btn-instagram:after {
+    background-color: #cf2c8d;
+}
+
+.btn-twitch {
+    color: #6440a5;
+}
+
+.btn-twitch:before, .btn-twitch:after {
+    background-color: #6440a5;
+}
+
+.btn-twitter {
+    color: #1ca0f1;
+}
+
+.btn-twitter:before, .btn-twitter:after {
+    background-color: #1ca0f1;
+}
+
+.btn-redbubble {
+    color: #ed1b23;
+}
+
+.btn-redbubble:before, .btn-redbubble:after {
+    background-color: #ed1b23;
+}
+
+.btn-patreon {
+    color: #f76754;
+}
+
+.btn-patreon:before, .btn-patreon:after {
+    background-color: #f76754;
+}
