@@ -27,6 +27,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 .audio-control {
@@ -65,6 +67,9 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+    z-index: -2;
 }
 
 .tchouki_run {
@@ -170,4 +175,27 @@ body {
 
 .btn-patreon:before, .btn-patreon:after {
     background-color: #f76754;
+}
+
+@media screen and (max-width: 600px) { 
+    body {
+        overflow-y: scroll;
+        padding-top: 40px !important;
+    }
+    .tchouki_run {
+        display: none;
+    }
+    .audio-control {
+        display: none;
+    }
+    .tchouki_logo_charged {
+        height: 100px;
+        width: 100px;
+    }
+    .icon_btn {
+        height: 50%;
+    }
+    .btn {
+        height: 40px !important;
+    }
 }
